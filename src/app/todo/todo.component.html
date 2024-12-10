@@ -1,0 +1,23 @@
+<p>todo works!</p>
+
+<input type="text" [value]="newTodoText()" (input)="handleInput($event)" >
+<button (click)="addTodo()">Add Todo</button>
+
+<h2>List of Todos</h2>
+<h4>{{total()}}</h4>
+
+<table border="2px">
+    <thead>
+        <tr>
+            <th>Todos</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let todo of todos()">
+            <td>{{todo.title}}</td>
+            <td><button (click)="deleteTodo(todo.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

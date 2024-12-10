@@ -1,0 +1,14 @@
+.danger {
+    background-color: aqua;
+    color: red;
+}
+
+.text-size {
+    font-size: 40px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+}

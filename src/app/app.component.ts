@@ -12,6 +12,7 @@ import { response } from 'express';
 import { error } from 'console';
 import { signal } from '@angular/core';
 import { TodoComponent } from './todo/todo.component';
+import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,7 @@ import { TodoComponent } from './todo/todo.component';
             NgSwitch, NgSwitchCase, NgSwitchDefault, 
             DatePipe, LowerCasePipe ,UpperCasePipe, CurrencyPipe ,PercentPipe,
             AppendPipe, AsyncPipe, JsonPipe,
-            TodoComponent],
+            TodoComponent, FormComponent],
   providers: [DataService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

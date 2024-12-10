@@ -3,3 +3,8 @@ export interface Todo {
     title: string;
     status: boolean;
 }
+
+export interface login {
+    name: string;
+    email: string;
+}

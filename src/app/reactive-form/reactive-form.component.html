@@ -1,0 +1,26 @@
+<p>reactive-form works!</p>
+
+<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" formControlName="name">
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" formControlName="email">
+    </div>
+
+    <div formGroupName="address">
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" formControlName="street">
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" formControlName="city">
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>

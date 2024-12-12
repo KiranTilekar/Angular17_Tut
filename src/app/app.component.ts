@@ -13,6 +13,7 @@ import { error } from 'console';
 import { signal } from '@angular/core';
 import { TodoComponent } from './todo/todo.component';
 import { FormComponent } from './form/form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,7 @@ import { FormComponent } from './form/form.component';
             NgSwitch, NgSwitchCase, NgSwitchDefault, 
             DatePipe, LowerCasePipe ,UpperCasePipe, CurrencyPipe ,PercentPipe,
             AppendPipe, AsyncPipe, JsonPipe,
-            TodoComponent, FormComponent],
+            TodoComponent, FormComponent, ReactiveFormComponent],
   providers: [DataService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
